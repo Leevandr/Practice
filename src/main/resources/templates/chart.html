@@ -2,10 +2,10 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Chart</title>
+    <title th:text="${chartName}">Chart</title>
 </head>
 <body>
-<h1 th:text="${chartName}"></h1>
+<h1 th:text="${chartName}">Chart</h1>
 <img th:src="@{/files/chart.png}" alt="Chart">
 </body>
 </html>
